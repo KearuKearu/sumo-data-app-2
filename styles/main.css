@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Base styles with Japanese/Sumo aesthetic */
 * {
     box-sizing: border-box;
@@ -409,3 +410,255 @@ footer {
     color: #9b0000;
     font-size: 0.8em;
 }
+=======
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tournament-info {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Match selector */
+.match-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.match-selector button {
+    padding: 8px 15px;
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.match-selector button:hover {
+    background-color: #3a5a80;
+}
+
+/* Rikishi container */
+.rikishi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rikishi {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.east-rikishi {
+    border-left: 5px solid #e74c3c;  /* Red for East */
+}
+
+.west-rikishi {
+    border-left: 5px solid #3498db;  /* Blue for West */
+}
+
+/* Rikishi header */
+.rikishi-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.country-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.country-info img {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+}
+
+/* Rikishi photo */
+.rikishi-photo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.rikishi-photo img {
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Rikishi stats */
+.rikishi-stats {
+    margin-bottom: 20px;
+}
+
+.record {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.physical-stats, .career-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+/* Basho results */
+.basho-results, .previous-basho {
+    margin-bottom: 20px;
+}
+
+.basho-results h4, .previous-basho h4 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.day-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.day-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.day-number {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.result-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.win {
+    background-color: white;
+    border: 2px solid black;
+}
+
+.loss {
+    background-color: black;
+    border: 2px solid black;
+}
+
+.absent {
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.opponent-name {
+    max-width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Previous basho results */
+.previous-results {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.previous-basho-item {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.basho-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/* Head-to-head */
+.head-to-head {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    align-self: center;
+}
+
+#head-to-head-record {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .rikishi-container {
+        flex-direction: column;
+    }
+    
+    .rikishi {
+        width: 100%;
+    }
+    
+    .head-to-head {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+>>>>>>> 94b2227660de6818c2711751023e91fee341d412

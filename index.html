@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,3 +137,143 @@
     <script src="scripts/app.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumo Data App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Sumo Data App</h1>
+        <div class="tournament-info">
+            <span id="tournament-name">Loading tournament...</span>
+            <span id="day-number">Day: --</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="match-container">
+            <!-- Match selector -->
+            <div class="match-selector">
+                <button id="prev-match">Previous Match</button>
+                <span id="current-match">Match: --</span>
+                <button id="next-match">Next Match</button>
+            </div>
+
+            <!-- Rikishi displays -->
+            <div class="rikishi-container">
+                <!-- East Rikishi -->
+                <div class="rikishi east-rikishi">
+                    <div class="rikishi-header">
+                        <div class="country-info">
+                            <img id="east-flag" src="assets/images/placeholder-flag.png" alt="Country flag">
+                            <span id="east-hometown">Hometown</span>
+                        </div>
+                        <h2 id="east-shikona">East Rikishi</h2>
+                        <h3 id="east-rank">Rank</h3>
+                    </div>
+
+                    <div class="rikishi-photo">
+                        <img id="east-photo" src="assets/images/placeholder-rikishi.png" alt="Rikishi photo">
+                    </div>
+
+                    <div class="rikishi-stats">
+                        <div class="record">
+                            <span id="east-record">0-0</span>
+                        </div>
+                        <div class="physical-stats">
+                            <div><span>Age: </span><span id="east-age">--</span></div>
+                            <div><span>Height: </span><span id="east-height">--- cm (-- ft -- in)</span></div>
+                            <div><span>Weight: </span><span id="east-weight">--- kg (--- lbs)</span></div>
+                        </div>
+                        <div class="career-stats">
+                            <div><span>Highest Rank: </span><span id="east-highest-rank">--</span></div>
+                            <div><span>Heya: </span><span id="east-heya">--</span></div>
+                        </div>
+                    </div>
+
+                    <div class="basho-results">
+                        <h4>Current Basho Results</h4>
+                        <div id="east-current-results" class="day-results">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="previous-basho">
+                        <h4>Previous 6 Basho</h4>
+                        <div id="east-previous-basho" class="previous-results">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Head-to-head record -->
+                <div class="head-to-head">
+                    <h4>Head-to-Head</h4>
+                    <div id="head-to-head-record">0-0</div>
+                </div>
+
+                <!-- West Rikishi (mirror of East) -->
+                <div class="rikishi west-rikishi">
+                    <div class="rikishi-header">
+                        <div class="country-info">
+                            <img id="west-flag" src="assets/images/placeholder-flag.png" alt="Country flag">
+                            <span id="west-hometown">Hometown</span>
+                        </div>
+                        <h2 id="west-shikona">West Rikishi</h2>
+                        <h3 id="west-rank">Rank</h3>
+                    </div>
+
+                    <div class="rikishi-photo">
+                        <img id="west-photo" src="assets/images/placeholder-rikishi.png" alt="Rikishi photo">
+                    </div>
+
+                    <div class="rikishi-stats">
+                        <div class="record">
+                            <span id="west-record">0-0</span>
+                        </div>
+                        <div class="physical-stats">
+                            <div><span>Age: </span><span id="west-age">--</span></div>
+                            <div><span>Height: </span><span id="west-height">--- cm (-- ft -- in)</span></div>
+                            <div><span>Weight: </span><span id="west-weight">--- kg (--- lbs)</span></div>
+                        </div>
+                        <div class="career-stats">
+                            <div><span>Highest Rank: </span><span id="west-highest-rank">--</span></div>
+                            <div><span>Heya: </span><span id="west-heya">--</span></div>
+                        </div>
+                    </div>
+
+                    <div class="basho-results">
+                        <h4>Current Basho Results</h4>
+                        <div id="west-current-results" class="day-results">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <div class="previous-basho">
+                        <h4>Previous 6 Basho</h4>
+                        <div id="west-previous-basho" class="previous-results">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Data sourced from sumo.or.jp - Refreshes automatically</p>
+        <p id="last-updated">Last updated: --</p>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="scripts/dataFetcher.js"></script>
+    <script src="scripts/rikishiRenderer.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
+>>>>>>> 94b2227660de6818c2711751023e91fee341d412
